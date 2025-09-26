@@ -7,24 +7,27 @@ Description:program for aloan qualification
 #include<stdio.h>
 
 int main(){
+	char name;
 	int age;
-	float annualincome;
+	int annualincome;
 	
-	printf("enter your age:");
-	scanf("%d",&age);
-	printf("  \n");
+	printf("enter your name:");
+	scanf("%s",&name);
+
+	printf("\nenter your age:");
+	scanf("%d",& age);
 	printf("enter your annualincome:");
-	scanf("%f",&annualincome);
-	printf("  \n");
+	scanf("&%d"& annualincome);
 	
 	
-	if(age) " equal or grater than 21";	
+	if(age>=21&&annualincome>=21000)
+	{
 	printf("\ncongrats you qualify for aloan");
-    if(age) "is less than 21";	
-    printf("\nyou donnot have the requirements to apply for aloan ");
-    if(annualincome)"equal or grater than 21000";
-    printf("\ncongrats you qualify for a loan");
-    if(annualincome)"less than 21000";
-    printf("\nyou donnot have the requirments to apply for aloan");
+	}
+    else
+	{
+    printf("\nunfortunately you can't  apply for aloan ");
+	}
 	return 0;}
+
 	
